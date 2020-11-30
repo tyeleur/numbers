@@ -5,7 +5,7 @@
 echo "Enter a positive number: "
 
 N=1
-read NUMBER
+read -r NUMBER
 
 while [ "$N" -le "$NUMBER" ]
 do
@@ -17,5 +17,5 @@ do
 	else
 		echo $N " Odd"
 	fi
-	N=$[$N+1]
+	N=$(($N+1))
 done
